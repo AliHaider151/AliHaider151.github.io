@@ -1,149 +1,456 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ali Haider - AI Engineer & Flutter Developer</title>
-<meta name="description" content="Ali Haider: AI Engineer and Flutter developer building computer vision systems and cross-platform apps.">
-<meta property="og:title" content="Ali Haider">
-<meta property="og:description" content="AI Engineer and Flutter developer.">
-<style>
-:root{--g:#0b5d3b;--g2:#157a50;--tint:#f0f7f3;--fg:#1d2420;--muted:#66706a;--line:#e3ebe6}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:#fff;color:var(--fg);font:17px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-main{max-width:760px;margin:0 auto;padding:64px 22px 56px}
-a{color:var(--g);text-decoration:none}
-a:hover{color:var(--g2)}
-.ic{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ali Haider - AI Engineer & Flutter Developer</title>
+    <meta
+      name="description"
+      content="Ali Haider: AI Engineer and Flutter developer building computer vision systems and cross-platform apps."
+    />
+    <meta property="og:title" content="Ali Haider" />
+    <meta
+      property="og:description"
+      content="AI Engineer and Flutter developer."
+    />
+    <style>
+      :root {
+        --g: #0b5d3b;
+        --g2: #157a50;
+        --tint: #f0f7f3;
+        --fg: #1d2420;
+        --muted: #66706a;
+        --line: #e3ebe6;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: #fff;
+        color: var(--fg);
+        font:
+          17px/1.7 system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+      }
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 64px 22px 56px;
+      }
+      a {
+        color: var(--g);
+        text-decoration: none;
+      }
+      a:hover {
+        color: var(--g2);
+      }
+      .ic {
+        width: 19px;
+        height: 19px;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        flex: none;
+      }
 
-header{text-align:center;margin-bottom:44px}
-.photo{width:140px;height:140px;border-radius:50%;object-fit:cover;border:3px solid #fff;box-shadow:0 0 0 3px var(--g);background:linear-gradient(135deg,var(--g),#2fa36b);margin-bottom:20px}
-h1{font-family:Georgia,"Times New Roman",serif;font-size:2.5rem;font-weight:600;line-height:1.1;margin:0 0 8px;color:var(--g)}
-.tag{color:var(--muted);font-style:italic;margin:0 0 20px;font-size:1.08rem}
-.social{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
-.social a{display:flex;align-items:center;gap:8px;padding:8px 16px;border:1.5px solid var(--g);border-radius:999px;font-size:.88rem;font-weight:500;transition:.15s}
-.social a:hover{background:var(--g);color:#fff}
+      header {
+        text-align: center;
+        margin-bottom: 44px;
+      }
+      .photo {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #fff;
+        box-shadow: 0 0 0 3px var(--g);
+        background: linear-gradient(135deg, var(--g), #2fa36b);
+        margin-bottom: 20px;
+      }
+      h1 {
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 2.5rem;
+        font-weight: 600;
+        line-height: 1.1;
+        margin: 0 0 8px;
+        color: var(--g);
+      }
+      .tag {
+        color: var(--muted);
+        font-style: italic;
+        margin: 0 0 20px;
+        font-size: 1.08rem;
+      }
+      .social {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      .social a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 16px;
+        border: 1.5px solid var(--g);
+        border-radius: 999px;
+        font-size: 0.88rem;
+        font-weight: 500;
+        transition: 0.15s;
+      }
+      .social a:hover {
+        background: var(--g);
+        color: #fff;
+      }
 
-h2{font-family:Georgia,"Times New Roman",serif;font-size:1.55rem;font-weight:600;color:var(--g);margin:52px 0 16px;padding-bottom:8px;border-bottom:2px solid var(--line);position:relative}
-h2::after{content:"";position:absolute;left:0;bottom:-2px;width:56px;height:2px;background:var(--g)}
-p{margin:0 0 14px}
+      h2 {
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 1.55rem;
+        font-weight: 600;
+        color: var(--g);
+        margin: 52px 0 16px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid var(--line);
+        position: relative;
+      }
+      h2::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 56px;
+        height: 2px;
+        background: var(--g);
+      }
+      p {
+        margin: 0 0 14px;
+      }
 
-.pub{margin:0 0 30px}
-.pub h3{font-family:Georgia,serif;font-size:1.15rem;margin:0 0 2px}
-.pub .meta{color:var(--muted);font-size:.84rem;margin:0 0 10px}
-.fig{height:120px;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#fff;margin-bottom:12px}
-.fig .ic{width:40px;height:40px;stroke-width:1.5}
-.f1{background:linear-gradient(135deg,#0b5d3b,#2fa36b)}
-.f2{background:linear-gradient(135deg,#0a4a30,#157a50)}
-.f3{background:linear-gradient(135deg,#127a52,#5cc08f)}
-.f4{background:linear-gradient(135deg,#073d28,#1b8a5c)}
-blockquote{margin:0;padding:10px 16px;background:var(--tint);border-left:3px solid var(--g);border-radius:0 8px 8px 0;font-size:.95rem;color:#2c3a32}
-.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
-.chip{font-size:.76rem;padding:2px 10px;border-radius:999px;background:var(--tint);color:var(--g);border:1px solid var(--line)}
-.chips.big .chip{font-size:.86rem;padding:5px 14px}
+      .pub {
+        margin: 0 0 30px;
+      }
+      .pub h3 {
+        font-family: Georgia, serif;
+        font-size: 1.15rem;
+        margin: 0 0 2px;
+      }
+      .pub .meta {
+        color: var(--muted);
+        font-size: 0.84rem;
+        margin: 0 0 10px;
+      }
+      .fig {
+        height: 120px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        margin-bottom: 12px;
+      }
+      .fig .ic {
+        width: 40px;
+        height: 40px;
+        stroke-width: 1.5;
+      }
+      .f1 {
+        background: linear-gradient(135deg, #0b5d3b, #2fa36b);
+      }
+      .f2 {
+        background: linear-gradient(135deg, #0a4a30, #157a50);
+      }
+      .f3 {
+        background: linear-gradient(135deg, #127a52, #5cc08f);
+      }
+      .f4 {
+        background: linear-gradient(135deg, #073d28, #1b8a5c);
+      }
+      blockquote {
+        margin: 0;
+        padding: 10px 16px;
+        background: var(--tint);
+        border-left: 3px solid var(--g);
+        border-radius: 0 8px 8px 0;
+        font-size: 0.95rem;
+        color: #2c3a32;
+      }
+      .chips {
+        display: flex;
+        gap: 6px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+      .chip {
+        font-size: 0.76rem;
+        padding: 2px 10px;
+        border-radius: 999px;
+        background: var(--tint);
+        color: var(--g);
+        border: 1px solid var(--line);
+      }
+      .chips.big .chip {
+        font-size: 0.86rem;
+        padding: 5px 14px;
+      }
 
-.row{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)}
-.row b{font-weight:600}
-.row span{color:var(--muted);font-size:.9rem}
-.when{white-space:nowrap}
+      .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 12px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .row b {
+        font-weight: 600;
+      }
+      .row span {
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+      .when {
+        white-space: nowrap;
+      }
 
-.contact{background:var(--tint);border-radius:14px;padding:22px;text-align:center}
-.contact a.btn{display:inline-flex;align-items:center;gap:8px;margin-top:6px;padding:10px 22px;background:var(--g);color:#fff;border-radius:999px;font-weight:500}
-.contact a.btn:hover{background:var(--g2)}
+      .contact {
+        background: var(--tint);
+        border-radius: 14px;
+        padding: 22px;
+        text-align: center;
+      }
+      .contact a.btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 6px;
+        padding: 10px 22px;
+        background: var(--g);
+        color: #fff;
+        border-radius: 999px;
+        font-weight: 500;
+      }
+      .contact a.btn:hover {
+        background: var(--g2);
+      }
 
-footer{margin-top:48px;text-align:center;color:var(--muted);font-size:.8rem}
-@media(max-width:600px){h1{font-size:2rem}main{padding-top:36px}.row{flex-direction:column;gap:0}}
-</style>
-</head>
-<body>
+      footer {
+        margin-top: 48px;
+        text-align: center;
+        color: var(--muted);
+        font-size: 0.8rem;
+      }
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 2rem;
+        }
+        main {
+          padding-top: 36px;
+        }
+        .row {
+          flex-direction: column;
+          gap: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="github" viewBox="0 0 24 24">
+        <path
+          d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+        />
+      </symbol>
+      <symbol id="linkedin" viewBox="0 0 24 24">
+        <path
+          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"
+        />
+        <rect x="2" y="9" width="4" height="12" />
+        <circle cx="4" cy="4" r="2" />
+      </symbol>
+      <symbol id="mail" viewBox="0 0 24 24">
+        <path
+          d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"
+        />
+        <polyline points="22,6 12,13 2,6" />
+      </symbol>
+      <symbol id="file" viewBox="0 0 24 24">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+        <polyline points="14 2 14 8 20 8" />
+        <line x1="16" y1="13" x2="8" y2="13" />
+        <line x1="16" y1="17" x2="8" y2="17" />
+      </symbol>
+      <symbol id="eye" viewBox="0 0 24 24">
+        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+        <circle cx="12" cy="12" r="3" />
+      </symbol>
+      <symbol id="pulse" viewBox="0 0 24 24">
+        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+      </symbol>
+      <symbol id="book" viewBox="0 0 24 24">
+        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+      </symbol>
+      <symbol id="users" viewBox="0 0 24 24">
+        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+        <circle cx="9" cy="7" r="4" />
+        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+      </symbol>
+    </svg>
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
-  <symbol id="linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
-  <symbol id="mail" viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
-  <symbol id="file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></symbol>
-  <symbol id="eye" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></symbol>
-  <symbol id="pulse" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></symbol>
-  <symbol id="book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
-  <symbol id="users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
-</svg>
+    <main>
+      <header>
+        <!-- add photo.jpg next to index.html -->
+        <img
+          class="photo"
+          src="photo.jpg"
+          alt="Ali Haider"
+          onerror="this.removeAttribute('src')"
+        />
+        <h1>Ali Haider</h1>
+        <p class="tag">See what makes it work</p>
+        <div class="social">
+          <a href="https://github.com/AliHaider151"
+            ><svg class="ic"><use href="#github" /></svg>GitHub</a
+          >
+          <a href="https://linkedin.com/in/alihaider151"
+            ><svg class="ic"><use href="#linkedin" /></svg>LinkedIn</a
+          >
+          <a href="mailto:alihaider29027@gmail.com"
+            ><svg class="ic"><use href="#mail" /></svg>Email</a
+          >
+          <!-- <a href="resume.pdf"><svg class="ic"><use href="#file"/></svg>Resume</a> -->
+        </div>
+      </header>
 
-<main>
+      <h2>About</h2>
+      <p>
+        I'm an AI Engineer and Flutter developer with a BS in Artificial
+        Intelligence. I build computer vision systems and cross-platform mobile
+        apps, and I'm interested in reinforcement learning and model evaluation.
+      </p>
+      <p>
+        Most recently I was a mobile developer at
+        <a href="#experience">FlockSense</a>, building real-time farm
+        monitoring.
+      </p>
 
-<header>
-  <!-- add photo.jpg next to index.html -->
-  <img class="photo" src="photo.jpg" alt="Ali Haider" onerror="this.removeAttribute('src')">
-  <h1>Ali Haider</h1>
-  <p class="tag">Building intelligent systems and apps people use</p>
-  <div class="social">
-    <a href="https://github.com/AliHaider151"><svg class="ic"><use href="#github"/></svg>GitHub</a>
-    <a href="https://linkedin.com/in/alihaider151"><svg class="ic"><use href="#linkedin"/></svg>LinkedIn</a>
-    <a href="mailto:alihaider29027@gmail.com"><svg class="ic"><use href="#mail"/></svg>Email</a>
-    <!-- <a href="resume.pdf"><svg class="ic"><use href="#file"/></svg>Resume</a> -->
-  </div>
-</header>
+      <h2>Selected Projects</h2>
 
-<h2>About</h2>
-<p>I'm an AI Engineer and Flutter developer with a BS in Artificial Intelligence. I build computer vision systems and cross-platform mobile apps, and I'm interested in reinforcement learning and model evaluation.</p>
-<p>Most recently I was a mobile developer at <a href="#experience">FlockSense</a>, building real-time farm monitoring.</p>
+      <div class="pub">
+        <div class="fig f1">
+          <svg class="ic"><use href="#eye" /></svg>
+        </div>
+        <h3>
+          <a href="https://github.com/AliHaider151"
+            >Crash Guard: AI Accident Detection</a
+          >
+        </h3>
+        <div class="meta">
+          Final year project · AMD Developer Hackathon ACT III
+        </div>
+        <blockquote>
+          Detects traffic accidents from video with YOLOv8, saves evidence and
+          sends automated alerts. A second AI model verifies each incident.
+        </blockquote>
+        <div class="chips">
+          <span class="chip">YOLOv8</span><span class="chip">PyTorch</span
+          ><span class="chip">Django</span><span class="chip">Firebase</span>
+        </div>
+      </div>
 
-<h2>Selected Projects</h2>
+      <div class="pub">
+        <div class="fig f2">
+          <svg class="ic"><use href="#pulse" /></svg>
+        </div>
+        <h3>FlockSense</h3>
+        <div class="meta">Mobile app · poultry farm management</div>
+        <blockquote>
+          Real-time monitoring of sensors, equipment and farm operations, with
+          push notifications.
+        </blockquote>
+        <div class="chips">
+          <span class="chip">Flutter</span><span class="chip">BLoC</span
+          ><span class="chip">Node.js</span>
+        </div>
+      </div>
 
-<div class="pub">
-  <div class="fig f1"><svg class="ic"><use href="#eye"/></svg></div>
-  <h3><a href="https://github.com/AliHaider151">Crash Guard: AI Accident Detection</a></h3>
-  <div class="meta">Final year project · AMD Developer Hackathon ACT III</div>
-  <blockquote>Detects traffic accidents from video with YOLOv8, saves evidence and sends automated alerts. A second AI model verifies each incident.</blockquote>
-  <div class="chips"><span class="chip">YOLOv8</span><span class="chip">PyTorch</span><span class="chip">Django</span><span class="chip">Firebase</span></div>
-</div>
+      <div class="pub">
+        <div class="fig f3">
+          <svg class="ic"><use href="#book" /></svg>
+        </div>
+        <h3>Brainiac's</h3>
+        <div class="meta">Mobile and web app · school management</div>
+        <blockquote>
+          Connects parents and schools and runs admin across multiple branches.
+        </blockquote>
+        <div class="chips">
+          <span class="chip">Flutter Web</span><span class="chip">Firebase</span
+          ><span class="chip">SendGrid</span>
+        </div>
+      </div>
 
-<div class="pub">
-  <div class="fig f2"><svg class="ic"><use href="#pulse"/></svg></div>
-  <h3>FlockSense</h3>
-  <div class="meta">Mobile app · poultry farm management</div>
-  <blockquote>Real-time monitoring of sensors, equipment and farm operations, with push notifications.</blockquote>
-  <div class="chips"><span class="chip">Flutter</span><span class="chip">BLoC</span><span class="chip">Node.js</span></div>
-</div>
+      <div class="pub">
+        <div class="fig f4">
+          <svg class="ic"><use href="#users" /></svg>
+        </div>
+        <h3>Noptime</h3>
+        <div class="meta">Mobile app · community</div>
+        <blockquote>
+          Helps people find activities and connect with others in their free
+          time.
+        </blockquote>
+        <div class="chips">
+          <span class="chip">Flutter</span><span class="chip">GetX</span>
+        </div>
+      </div>
 
-<div class="pub">
-  <div class="fig f3"><svg class="ic"><use href="#book"/></svg></div>
-  <h3>Brainiac's</h3>
-  <div class="meta">Mobile and web app · school management</div>
-  <blockquote>Connects parents and schools and runs admin across multiple branches.</blockquote>
-  <div class="chips"><span class="chip">Flutter Web</span><span class="chip">Firebase</span><span class="chip">SendGrid</span></div>
-</div>
+      <h2 id="experience">Experience</h2>
+      <div class="row">
+        <div><b>FlockSense</b><br /><span>Mobile App Developer</span></div>
+        <span class="when">2026</span>
+      </div>
+      <div class="row">
+        <div><b>DotSinc</b><br /><span>Mobile App Developer</span></div>
+        <span class="when">2024 – 2025</span>
+      </div>
 
-<div class="pub">
-  <div class="fig f4"><svg class="ic"><use href="#users"/></svg></div>
-  <h3>Noptime</h3>
-  <div class="meta">Mobile app · community</div>
-  <blockquote>Helps people find activities and connect with others in their free time.</blockquote>
-  <div class="chips"><span class="chip">Flutter</span><span class="chip">GetX</span></div>
-</div>
+      <h2>Education</h2>
+      <div class="row">
+        <div><b>KFUEIT</b><br /><span>BS Artificial Intelligence</span></div>
+        <span class="when">2022 – 2026</span>
+      </div>
 
-<h2 id="experience">Experience</h2>
-<div class="row"><div><b>FlockSense</b><br><span>Mobile App Developer</span></div><span class="when">2026</span></div>
-<div class="row"><div><b>DotSinc</b><br><span>Mobile App Developer</span></div><span class="when">2024 – 2025</span></div>
+      <h2>Skills</h2>
+      <div class="chips big">
+        <span class="chip">Python</span><span class="chip">Dart</span
+        ><span class="chip">Kotlin</span><span class="chip">C++</span>
+        <span class="chip">Flutter</span><span class="chip">PyTorch</span
+        ><span class="chip">YOLO</span><span class="chip">TensorFlow</span>
+        <span class="chip">Reinforcement Learning</span
+        ><span class="chip">Django</span><span class="chip">Firebase</span>
+      </div>
 
-<h2>Education</h2>
-<div class="row"><div><b>KFUEIT</b><br><span>BS Artificial Intelligence</span></div><span class="when">2022 – 2026</span></div>
+      <h2>Get in Touch</h2>
+      <div class="contact">
+        <p>Open to collaborations and roles.</p>
+        <a class="btn" href="mailto:alihaider29027@gmail.com"
+          ><svg class="ic"><use href="#mail" /></svg>alihaider29027@gmail.com</a
+        >
+      </div>
 
-<h2>Skills</h2>
-<div class="chips big">
-  <span class="chip">Python</span><span class="chip">Dart</span><span class="chip">Kotlin</span><span class="chip">C++</span>
-  <span class="chip">Flutter</span><span class="chip">PyTorch</span><span class="chip">YOLO</span><span class="chip">TensorFlow</span>
-  <span class="chip">Reinforcement Learning</span><span class="chip">Django</span><span class="chip">Firebase</span>
-</div>
-
-<h2>Get in Touch</h2>
-<div class="contact">
-  <p>Open to collaborations and roles.</p>
-  <a class="btn" href="mailto:alihaider29027@gmail.com"><svg class="ic"><use href="#mail"/></svg>alihaider29027@gmail.com</a>
-</div>
-
-<footer>© <span id="y"></span> Ali Haider</footer>
-</main>
-<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
-</body>
+      <footer>© <span id="y"></span> Ali Haider</footer>
+    </main>
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
