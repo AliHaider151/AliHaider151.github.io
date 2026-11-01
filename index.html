@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ali Haider – AI Engineer & Flutter Developer</title>
+<meta name="description" content="Ali Haider is an AI Engineer and Flutter developer building computer vision systems and cross-platform mobile apps.">
+<meta property="og:title" content="Ali Haider">
+<meta property="og:description" content="AI Engineer and Flutter developer.">
+<meta property="og:type" content="website">
+<style>
+:root{--bg:#fdfdfc;--fg:#1c1c1c;--muted:#6b6b6b;--link:#2563eb;--line:#e6e6e3}
+@media (prefers-color-scheme:dark){:root{--bg:#121212;--fg:#e8e8e6;--muted:#9a9a96;--link:#7aa7ff;--line:#2a2a2a}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 Georgia,"Times New Roman",serif}
+main{max-width:720px;margin:0 auto;padding:64px 22px 80px}
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline}
+h1{font-size:2.1rem;line-height:1.2;margin:0 0 6px;font-weight:600}
+h2{font-size:1.25rem;margin:48px 0 14px;padding-bottom:6px;border-bottom:1px solid var(--line);font-weight:600}
+.tag{color:var(--muted);margin:0 0 18px;font-size:1.05rem}
+.links{display:flex;flex-wrap:wrap;gap:6px 16px;font-family:system-ui,sans-serif;font-size:.9rem;margin-bottom:28px}
+.head{display:flex;gap:26px;align-items:flex-start;justify-content:space-between}
+.head img{width:132px;height:132px;border-radius:50%;object-fit:cover;flex:none}
+.item{margin:0 0 22px}
+.item h3{margin:0;font-size:1.05rem;font-weight:600}
+.meta{color:var(--muted);font-family:system-ui,sans-serif;font-size:.82rem;margin:2px 0 4px}
+.item p,.item ul{margin:4px 0 0}
+ul{padding-left:20px}
+li{margin:3px 0}
+.stack{font-family:system-ui,sans-serif;font-size:.8rem;color:var(--muted)}
+.skills dt{font-family:system-ui,sans-serif;font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-top:14px}
+.skills dd{margin:2px 0 0}
+footer{margin-top:56px;color:var(--muted);font-family:system-ui,sans-serif;font-size:.8rem}
+@media(max-width:560px){.head{flex-direction:column-reverse}h1{font-size:1.8rem}main{padding-top:40px}}
+</style>
+</head>
+<body>
+<main>
+
+<div class="head">
+  <div>
+    <h1>Ali Haider</h1>
+    <p class="tag">AI Engineer and Flutter Developer</p>
+    <div class="links">
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="https://github.com/AliHaider151">GitHub</a>
+      <a href="https://linkedin.com/in/alihaider151">LinkedIn</a>
+      <a href="mailto:alihaider29027@gmail.com">Email</a>
+      <!-- <a href="resume.pdf">Resume</a> -->
+    </div>
+  </div>
+  <!-- Put your photo next to index.html as photo.jpg (square works best) -->
+  <img src="photo.jpg" alt="Ali Haider" onerror="this.style.display='none'">
+</div>
+
+<p>I'm an AI Engineer and mobile developer with a BS in Artificial Intelligence. I build computer vision systems and cross-platform apps, from YOLO-based accident detection to real-time Flutter apps used by schools and farms. I'm interested in reinforcement learning, model evaluation and AI alignment.</p>
+
+<h2 id="projects">Selected Projects</h2>
+
+<div class="item">
+  <h3><a href="https://github.com/AliHaider151">Crash Guard: AI-Powered Accident Detection</a></h3>
+  <div class="meta">Final year project · AMD Developer Hackathon ACT III</div>
+  <p>Detects traffic accidents from video using YOLOv8 and OpenCV, captures pre- and post-incident evidence and triggers automated alerts. Uses Django, Firebase Firestore, FCM and Cloudinary for incident tracking, video storage and location-based reporting, with AMD DeepSeek Vision as a secondary AI verifier.</p>
+  <div class="stack">Python · Django · YOLOv8 · PyTorch · OpenCV · Firebase · Cloudinary</div>
+</div>
+
+<div class="item">
+  <h3>FlockSense</h3>
+  <div class="meta">Mobile app · poultry farm management</div>
+  <p>Real-time monitoring of sensors, equipment and farm operations. Stream-based data handling, BLoC state management, push notifications and REST API integration.</p>
+  <div class="stack">Flutter · Dart · BLoC · Node.js · REST APIs</div>
+</div>
+
+<div class="item">
+  <h3>Brainiac's</h3>
+  <div class="meta">Mobile and web app · childcare and school management</div>
+  <p>Parent-school communication and multi-branch academic and administrative operations. Responsive Flutter Web interfaces, Firebase Cloud Functions, real-time notifications and SendGrid email delivery.</p>
+  <div class="stack">Flutter · Flutter Web · Firebase · Provider · SendGrid</div>
+</div>
+
+<div class="item">
+  <h3>Noptime</h3>
+  <div class="meta">Mobile app · community and activities</div>
+  <p>Cross-platform app that helps users discover personalized activities and connect with others. Deep linking, intent sharing, push notifications and GetX-based navigation.</p>
+  <div class="stack">Flutter · Dart · GetX · REST APIs</div>
+</div>
+
+<h2 id="experience">Experience</h2>
+
+<div class="item">
+  <h3>Mobile App Developer, FlockSense</h3>
+  <div class="meta">Remote · Jan 2026 – Sep 2026</div>
+  <ul>
+    <li>Refactored Flutter state management with BLoC and Equatable for better maintainability and scalability.</li>
+    <li>Replaced frequent API polling with stream-based updates, cutting unnecessary network requests and improving real-time sensor monitoring.</li>
+  </ul>
+</div>
+
+<div class="item">
+  <h3>Mobile App Developer, DotSinc</h3>
+  <div class="meta">Pakistan · Jun 2024 – Nov 2025</div>
+  <ul>
+    <li>Optimized video compression and playback for faster content loading and sharing in a social media app.</li>
+    <li>Implemented deep linking, native intent sharing, real-time chat, and Firebase and API integrations.</li>
+  </ul>
+</div>
+
+<div class="item">
+  <h3>Mobile App Developer Intern, DotSinc</h3>
+  <div class="meta">Pakistan · May 2024 – Aug 2024</div>
+  <ul>
+    <li>Built Flutter e-commerce features and backend APIs with MySQL.</li>
+    <li>Applied MVVM/MVC architecture to improve code organization.</li>
+  </ul>
+</div>
+
+<h2>Education</h2>
+<div class="item">
+  <h3>BS in Artificial Intelligence, KFUEIT</h3>
+  <div class="meta">Pakistan · Jan 2022 – Feb 2026 · CGPA 3.4/4</div>
+  <p>Coursework: Machine Learning, Reinforcement Learning, Deep Learning, Computer Vision, Image Processing, Information Retrieval, Data Structures and Algorithms, Operating Systems, Computer Networks, Databases.</p>
+</div>
+
+<h2>Skills</h2>
+<dl class="skills">
+  <dt>Languages</dt><dd>Python, Dart, Kotlin, C/C++, SQL</dd>
+  <dt>AI / ML</dt><dd>PyTorch, TensorFlow, YOLO, Hugging Face, Reinforcement Learning, Gymnasium, Stable-Baselines3, LLM Evaluation, Reward Design, Experimental Design, Generalization Analysis</dd>
+  <dt>Mobile and Web</dt><dd>Flutter, React Native, Django, Firebase, Git CI/CD</dd>
+  <dt>Data</dt><dd>NumPy, Pandas, Jupyter Notebook</dd>
+</dl>
+
+<h2>Contact</h2>
+<p>Open to collaborations and roles. Reach me at <a href="mailto:alihaider29027@gmail.com">alihaider29027@gmail.com</a>.</p>
+
+<footer>© <span id="y"></span> Ali Haider</footer>
+
+</main>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
